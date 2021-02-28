@@ -6,37 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Usman Shahid | Portfolio</title>
 </head>
 
 <body>
+    <!-- Contact me -->
+    <main class="contact-me hidden" id="contact-form">
+        <nav class="contact-me-top-bar">
+            <img src="images/Logo.png" alt="" class="logo" alt="Usman Shahid Portfolio Logo">
+            <div class="cross-icon">x</div>
+        </nav>
+        <h1 class="contact-me-heading">Thank you taking the time to reach out. How can I help you today?</h1>
+        <form action="#">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="message">Message</label>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+            <input type="button" value="Submit" class="button">
+        </form>
+    </main>
+
     <nav>
         <img src="images/Logo.png" alt="" class="logo" alt="Usman Shahid Portfolio Logo">
-        <button type="button">Say Hello</button>
+        <button type="button" class="button" id="contact">Say Hello</button>
     </nav>
     <header id="banner">
         <h1>WordPress Designer & Front-End Developer</h1>
         <p class="banner-text">I love designing and building beautiful websites.</p>
-        <img src="images/Usman Shahid.png" alt="Usman Shahid Front-end Developer" class="banner-image">
+        <img src="images/Usman Shahid.png" alt="Usman Shahid Front-end Developer" class="banner-img">
         <img src="images/Top Front end developer.png" alt="Vector graphic showing life of a website designer" class="banner-vector-graphics">
 
-        <!-- Contact me -->
-        <main class="contact-me hidden">
-            <nav class="contact-me-top-bar">
-                <img src="images/Logo.png" alt="" class="logo" alt="Usman Shahid Portfolio Logo">
-            </nav>
-            <h1 class="contact-me-heading">Thank you taking the time to reach out. How can I help you today?</h1>
-            <form action="#">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="message">Message</label>
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
 
-                <input type="button" value="Submit">
-            </form>
-        </main>
     </header>
 
     <main>
@@ -71,22 +76,25 @@
             <p>I create stunning WordPress websites. I have over 3 years of experience in WP.</p>
             <div class="work-imgs">
                 <div class="image">
-                    <img src="images/Project 1.png" alt="project 1" class="prject-1">
-                    <h3 class="img-text">Drive For Change</h3>
+                    <img src="images/Project 1.png" alt="project 1">
+                    <h3 class="img-text ">Drive For Change</h3>
+                    <div class="overlay project-1"></div>
                     <button class="img-button" type="button">
                         <a href="https://driveforchange.info" class="live-website">Live Website</a>
                     </button>
                 </div>
                 <div class="image">
-                    <img src="images/Project 2.png" alt="project 2" class="prject-2">
-                    <h3 class="img-text">Buy Right</h3>
+                    <img src="images/Project 2.png" alt="project 2">
+                    <h3 class="img-text ">Buy Right</h3>
+                    <div class="overlay project-2"></div>
                     <button class="img-button" type="button">
                         <a href="https://buyright.pk" class="live-website">Live Website</a>
                     </button>
                 </div>
                 <div class="image">
-                    <img src="images/Project 3.png" alt="project 3" class="prject-3">
+                    <img src="images/Project 3.png" alt="project 3">
                     <h3 class="img-text">USFS</h3>
+                    <div class="overlay  project-3"></div>
                     <button class="img-button" type="button">
                         <a href="https://team-usfs.com" class="live-website">Live Website</a>
                     </button>

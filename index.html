@@ -13,7 +13,7 @@
 
 <body>
     <!-- Contact me -->
-    <main class="contact-me hidden" id="contact-form">
+    <main class="contact-me hidden" id="contact-form" onclick="myFunction()">
         <nav class="contact-me-top-bar">
             <img src="images/Logo.png" alt="" class="logo" alt="Usman Shahid Portfolio Logo">
             <div class="cross-icon">x</div>
@@ -27,13 +27,13 @@
             <label for="message">Message</label>
             <textarea name="message" id="" cols="30" rows="10"></textarea>
 
-            <input type="button" value="Submit" class="button">
+            <input type="button" value="Submit" class="form-button">
         </form>
     </main>
 
     <nav>
         <img src="images/Logo.png" alt="" class="logo" alt="Usman Shahid Portfolio Logo">
-        <button type="button" class="button" id="contact">Say Hello</button>
+        <button type="button" class="form-button" id="contact" onclick="myFunction()">Say Hello</button>
     </nav>
     <header id="banner">
         <h1>WordPress Designer & Front-End Developer</h1>
@@ -107,6 +107,13 @@
         <img src="images/Github icon.png" alt="github icon for all projects" class="github-icon">
         <p class="footer-text">Handcrafted by me 2020 </p>
     </footer>
+
+    <script>
+        const myFunction = () => {
+            let contact = document.getElementById('contact-form');
+            contact.classList.toggle('hidden');
+        }
+    </script>
 </body>
 
 </html>

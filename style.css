@@ -289,7 +289,7 @@ footer {
 /***** Contact Form *****/
 
 .contact-me {
-    height: 80vh;
+    height: 100vh;
     background-color: white;
     z-index: 1;
 }
@@ -342,19 +342,19 @@ form input[type="button"] {
 
 /* Elements */
 
-.button {
-    border-radius: 50px;
+.form-button {
+    background-color: white;
     border-color: #202833;
+    border-radius: 50px;
     color: #202833;
     font-family: 'Quicksand', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     padding: 10px 60px;
-    background-color: white;
     transition: background-color 400ms ease-in-out;
 }
 
-.button:hover {
+.form-button:hover {
     background-color: #202833;
     color: #C4C5C7;
 }
